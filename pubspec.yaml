@@ -1,0 +1,27 @@
+name: capstone_laundry_client
+description: A graphql client for connecting to database
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.4 <3.0.0"
+
+dependencies:
+  ferry: ^0.11.2
+  gql_http_link: ^0.4.4
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  ferry_generator: ^0.6.1
+
+dev_dependencies:
+  pedantic: ^1.9.0
+  build_runner: ^2.3.2
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
