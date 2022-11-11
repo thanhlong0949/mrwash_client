@@ -7,7 +7,12 @@ export 'src/graphql/__generated__/equipment.var.gql.dart';
 export 'src/__generated__/schema.schema.gql.dart';
 
 Client initClient(String uri) {
-  final link = HttpLink(uri);
+  final link = HttpLink(
+    uri,
+    defaultHeaders: {
+      'x-hasura-admin-secret': 'myadminsecretkey',
+    },
+  );
   final client = Client(link: link);
   return client;
 }
