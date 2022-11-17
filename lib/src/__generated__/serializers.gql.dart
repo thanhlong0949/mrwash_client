@@ -448,6 +448,18 @@ import 'package:capstone_laundry_client/src/graphql/__generated__/equipment.req.
     show GAllEquipmentReq;
 import 'package:capstone_laundry_client/src/graphql/__generated__/equipment.var.gql.dart'
     show GAllEquipmentVars;
+import 'package:capstone_laundry_client/src/graphql/__generated__/service.data.gql.dart'
+    show GAllServiceData, GAllServiceData_laundry_service_service;
+import 'package:capstone_laundry_client/src/graphql/__generated__/service.req.gql.dart'
+    show GAllServiceReq;
+import 'package:capstone_laundry_client/src/graphql/__generated__/service.var.gql.dart'
+    show GAllServiceVars;
+import 'package:capstone_laundry_client/src/graphql/__generated__/vendor.data.gql.dart'
+    show GAllVendorData, GAllVendorData_laundry_service_vendor;
+import 'package:capstone_laundry_client/src/graphql/__generated__/vendor.req.gql.dart'
+    show GAllVendorReq;
+import 'package:capstone_laundry_client/src/graphql/__generated__/vendor.var.gql.dart'
+    show GAllVendorVars;
 import 'package:ferry_exec/ferry_exec.dart';
 import 'package:gql_code_builder/src/serializers/operation_serializer.dart'
     show OperationSerializer;
@@ -462,6 +474,14 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GAllEquipmentData_laundry_service_equipment,
   GAllEquipmentReq,
   GAllEquipmentVars,
+  GAllServiceData,
+  GAllServiceData_laundry_service_service,
+  GAllServiceReq,
+  GAllServiceVars,
+  GAllVendorData,
+  GAllVendorData_laundry_service_vendor,
+  GAllVendorReq,
+  GAllVendorVars,
   GBoolean_comparison_exp,
   GInt_comparison_exp,
   GString_comparison_exp,

@@ -12,6 +12,14 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GAllEquipmentData_laundry_service_equipment.serializer)
       ..add(GAllEquipmentReq.serializer)
       ..add(GAllEquipmentVars.serializer)
+      ..add(GAllServiceData.serializer)
+      ..add(GAllServiceData_laundry_service_service.serializer)
+      ..add(GAllServiceReq.serializer)
+      ..add(GAllServiceVars.serializer)
+      ..add(GAllVendorData.serializer)
+      ..add(GAllVendorData_laundry_service_vendor.serializer)
+      ..add(GAllVendorReq.serializer)
+      ..add(GAllVendorVars.serializer)
       ..add(GBoolean_comparison_exp.serializer)
       ..add(GInt_comparison_exp.serializer)
       ..add(GString_comparison_exp.serializer)
@@ -453,6 +461,14 @@ Serializers _$serializers = (new Serializers().toBuilder()
             const FullType(GAllEquipmentData_laundry_service_equipment)
           ]),
           () => new ListBuilder<GAllEquipmentData_laundry_service_equipment>())
+      ..addBuilderFactory(
+          const FullType(BuiltList,
+              const [const FullType(GAllServiceData_laundry_service_service)]),
+          () => new ListBuilder<GAllServiceData_laundry_service_service>())
+      ..addBuilderFactory(
+          const FullType(BuiltList,
+              const [const FullType(GAllVendorData_laundry_service_vendor)]),
+          () => new ListBuilder<GAllVendorData_laundry_service_vendor>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(Gdate)]),
           () => new ListBuilder<Gdate>())

@@ -1,0 +1,10 @@
+query AllService {
+  laundry_service_service {
+    service_id
+    service_name
+    service_price
+    service_description
+    max_weight
+    min_weight
+  }
+}

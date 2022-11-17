@@ -4,6 +4,12 @@ import 'package:ferry/ferry.dart';
 export 'src/graphql/__generated__/equipment.data.gql.dart';
 export 'src/graphql/__generated__/equipment.req.gql.dart';
 export 'src/graphql/__generated__/equipment.var.gql.dart';
+export 'src/graphql/__generated__/vendor.data.gql.dart';
+export 'src/graphql/__generated__/vendor.var.gql.dart';
+export 'src/graphql/__generated__/vendor.req.gql.dart';
+export 'src/graphql/__generated__/service.data.gql.dart';
+export 'src/graphql/__generated__/service.var.gql.dart';
+export 'src/graphql/__generated__/service.req.gql.dart';
 export 'src/__generated__/schema.schema.gql.dart';
 
 Client initClient(String uri) {
